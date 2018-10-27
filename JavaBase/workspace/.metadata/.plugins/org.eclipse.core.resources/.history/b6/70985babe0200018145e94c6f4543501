@@ -1,0 +1,11 @@
+package lesson01;
+
+/*public interface AnimalFactory {
+
+}
+*/
+public abstract class AnimalFactory {
+
+	public abstract Animal createAnimal();
+	//public abstract Animal newAnimal();
+}

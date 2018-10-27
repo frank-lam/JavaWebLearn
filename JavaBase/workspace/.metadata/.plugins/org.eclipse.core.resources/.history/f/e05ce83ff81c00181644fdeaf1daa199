@@ -1,0 +1,82 @@
+package lesson06;
+
+import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileInputStream;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//
+		/**
+		 * 一、设计模式【一种固定代码风格】
+		 *     面试题：Java中有哪些设计模式
+		 *     常用设计模式：装饰模式、单例模式、模版模式、适配器模式、代理模式、工厂模式...
+		 * 
+		 * 二、装饰(Decorator)设计模式
+		 * 	1.装饰模式的概念:
+			装饰模式是动态的给一个对象添加一些额外的功能，就增加功能来说，装饰模式比生成子类更为灵活。
+			装饰模式是在不必改变原类文件和使用继承的情况下，动态的扩展一个对象的功能。
+			装饰模式是创建一个包装对象，也就是使用装饰来包裹真实的对象。	
+		    
+		    2.装饰模式的实现方式
+				1. 装饰对象和真实对象有相同的接口/抽象类。
+				2. 装饰对象包含一个真实对象的引用（reference）
+				3. 装饰对象的所有方法，内部实现都是通过真实对象的引用来调用，然后实现自己的功能
+
+		 */
+		
+	/*	BufferedInputStream bis = new BufferedInputStream(new FileInputStream("a.txt"));
+		BufferedOutputStream bos;
+		BufferedReader br;
+		BufferedWriter bw;*/
+		
+		/*GYFStudent stu = new GYFStudent();
+		stu.code();*/
+	}
+
+}
+
+//1.接口
+interface Person{
+	public void code();
+}
+
+//2.接口实现类
+final class UniversityStudent implements Person{
+
+	@Override
+	public void code() {
+		// TODO Auto-generated method stub
+		System.out.println("在大学期间学了一点点C语言...");
+	}
+}
+
+/*class GYFStudent extends UniversityStudent{
+	@Override
+	public void code() {
+		// TODO Auto-generated method stub
+		super.code();
+		System.out.println("在GYF IT EDU 学习Java语言...");
+	}
+}*/
+
+class GYFStudent implements Person{
+
+	private UniversityStudent us;
+	public GYFStudent(UniversityStudent us){
+		this.us = us;
+	}
+	
+	@Override
+	public void code() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}
+

@@ -1,0 +1,18 @@
+package lesson04;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+		//BufferedWriter的newLine()方法
+		// newLine()换行
+		
+		//往b.txt写a.txt文件的内容【一行一行拷贝,读一行写一行】
+		//1.创建Reader
+		FileReader fr = new FileReader("a.txt");
+		BufferedReader br = new BufferedReader(fr);
+		
+	}
+}

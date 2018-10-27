@@ -1,0 +1,12 @@
+package lesson03;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//线程实现的方式 (1) - 继承Thread 
+
+	}
+
+}

@@ -1,0 +1,11 @@
+package lesson15;
+
+public class Demo02 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	/*	需求：把一个字符串中的手机号码获取出来*/
+		String s = "我的手机是18988888888,我曾用过18987654321,还用过18812345678";
+	}
+
+}

@@ -1,0 +1,10 @@
+package lesson01;
+
+/*public interface AnimalFactory {
+
+}
+*/
+public abstract class AnimalFactory {
+
+	
+}

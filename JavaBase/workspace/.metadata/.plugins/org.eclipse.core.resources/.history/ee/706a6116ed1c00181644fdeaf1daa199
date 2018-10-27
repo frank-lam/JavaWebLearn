@@ -1,0 +1,9 @@
+package lesson01;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+		//使用字符流的场景
+
+	}
+}

@@ -1,0 +1,13 @@
+package lesson10;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+		//练习:通过反射越过泛型检查
+
+		List<Integer> list = new ArrayList<Integer>();
+	}
+}

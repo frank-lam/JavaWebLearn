@@ -1,0 +1,15 @@
+package lesson11;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+		//正则表达式的构造摘要 - 数量词
+/*		X? X，一次或一次也没有
+		X* X，零次或多次
+		X+ X，一次或多次
+		X{n} X，恰好 n 次 
+		X{n,} X，至少 n 次 
+		X{n,m} X，至少 n 次，但是不超过 m 次 */
+
+	}
+}

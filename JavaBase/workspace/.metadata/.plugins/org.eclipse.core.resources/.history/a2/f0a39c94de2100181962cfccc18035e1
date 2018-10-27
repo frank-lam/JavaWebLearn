@@ -1,0 +1,13 @@
+package lesson15;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+	/*	 Pattern p = Pattern.compile("a*b");
+		 Matcher m = p.matcher("aaaaab");
+		 boolean b = m.matches();*/
+		
+		String s1 = "101030";
+		
+	}
+}

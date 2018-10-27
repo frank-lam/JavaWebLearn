@@ -1,0 +1,46 @@
+package lesson05;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * 掌握思想：
+ * 1.for循环的倒序遍历
+ */
+public class Demo01 {
+
+	public static void main(String[] args) throws IOException {
+		//案例:将文本反转写入另一个文件
+		
+		//1.把文本每一行内容读取出来存在List<String> 集合
+		//1.1 集合对象
+		List<String> list = new ArrayList<String>();
+		
+		//1.2一行行读取文件
+		BufferedReader br = new BufferedReader(new FileReader("a.txt"));
+		String line = null;
+		while((line = br.readLine()) != null){
+			list.add(line);
+		}
+		
+		System.out.println(list);
+		
+		//2.当我们要写入文件时，倒序保存List集合中的内容到文件中
+		BufferedWriter bw = new BufferedWriter(new FileWriter("b.txt"));
+		for(int i = list.size() - 1 ; i>=0; i--){
+			bw.write(list.get(i));
+			bw.newLine();//换行 
+		}
+		
+		//3.关闭流
+		br.close();
+		bw.close();
+		System.out.println("finish....");
+	}
+}

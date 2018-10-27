@@ -1,0 +1,18 @@
+package lesson07;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//打印流的概述和特点 (掌握)
+	/*	什么是打印流 
+		1.该流可以很方便的将对象的toString()结果输出, 并且自动加上换行, 而且可以使用自动刷出的模式
+		2.System.out就是一个PrintStream, 其默认向控制台输出信息
+		3.PrintStream和PrintWriter分别是打印的字节流和字符流*/
+		
+		//1.打印的字节流
+
+	}
+
+}

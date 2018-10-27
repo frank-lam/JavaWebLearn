@@ -1,0 +1,41 @@
+package lesson09;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+		//线程休眠(掌握)
+/*		Thread.sleep(毫秒), 控制当前线程休眠若干毫秒
+		1秒= 1000毫秒 
+		1秒 = 1000毫秒* 1000微妙 * 1000纳秒（1000000000 ）*/
+		
+		//test1();
+		//子线程休眠
+		new Thread(){
+			
+			public void run() {
+				
+			};
+		}.start();
+		
+
+	}
+
+	/**
+	 * 主线程休眠
+	 */
+	public static void test1() {
+		for(int i=0;i<10;i++){
+			System.out.println(i);
+			//休眠【暂停】
+			try {
+				Thread.sleep(1000);//主线程休眠
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		
+		
+		System.out.println("AAAAAAAAAAAAAAAAAA");
+	}
+}

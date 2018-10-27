@@ -1,0 +1,9 @@
+package lesson11;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+		//线程组的概述和使用(了解)
+
+	}
+}

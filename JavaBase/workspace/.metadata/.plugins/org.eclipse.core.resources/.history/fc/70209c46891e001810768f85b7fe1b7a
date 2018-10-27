@@ -1,0 +1,9 @@
+package lesson04;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+		//线程实现的方式 (2) - 定义类实现Runnable接口
+
+	}
+}

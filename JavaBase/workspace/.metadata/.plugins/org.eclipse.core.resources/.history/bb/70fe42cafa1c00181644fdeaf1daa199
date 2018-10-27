@@ -1,0 +1,18 @@
+package lesson07;
+
+import java.io.FileOutputStream;
+import java.io.OutputStreamWriter;
+
+public class Demo02 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	/*	OutputStreamWriter
+		1>使用指定的编码 写入文件
+		*/
+		
+		FileOutputStream fos = new FileOutputStream("c.txt");
+		OutputStreamWriter osw = new OutputStreamWriter(fos, "UTF-8");
+	}
+
+}

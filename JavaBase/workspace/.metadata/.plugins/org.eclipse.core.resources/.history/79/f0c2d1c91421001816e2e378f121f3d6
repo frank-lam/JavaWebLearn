@@ -1,0 +1,9 @@
+package lesson13;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+		//模版(Template)设计模式概述和使用
+
+	}
+}

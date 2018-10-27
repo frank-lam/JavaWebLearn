@@ -1,0 +1,15 @@
+package lesson13;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+/*		线程的优先级
+		1.setPriority()设置线程的优先级
+		2.线程优先级是从1~10
+		3.每个线程都有个默认优先级5
+		*/
+	}
+
+}

@@ -1,0 +1,30 @@
+package lesson08;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
+
+public class Demo01 {
+
+	public static void main(String[] args) throws IOException {
+		//练习:获取文本上字符出现的次数,把数据写入文件
+/*		思路：
+		1.遍历文本每一个字符
+		2.字符出现的次数存在Map中
+		*//**
+		 * Map<Character,Integer> map = new HashMap<Character,Integer>();
+		 * map.put('a',18);
+		 * map.put('你',2);
+		 *//*
+		3.把map中的数据写入文件*/
+		
+		//==================================
+		//1.创建Map集合
+		Map<Character,Integer> map = new HashMap<Character,Integer>();
+		
+		//2.遍历每一个字符
+		FileReader reader = new FileReader("a.txt");
+	}
+}

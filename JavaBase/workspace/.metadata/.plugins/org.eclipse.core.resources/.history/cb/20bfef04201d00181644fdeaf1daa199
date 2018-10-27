@@ -1,0 +1,19 @@
+package lesson13;
+
+import java.io.SequenceInputStream;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+		//SequenceInputStream 序列流使用二
+		
+		//需求，把a.txt b.txt c.txt 的内容拷贝到d.txt
+		
+		//创建序列流
+		
+		/**Enumeration
+		 * */
+		Enumeration e;
+		SequenceInputStream sis = new SequenceInputStream(e);
+	}
+}

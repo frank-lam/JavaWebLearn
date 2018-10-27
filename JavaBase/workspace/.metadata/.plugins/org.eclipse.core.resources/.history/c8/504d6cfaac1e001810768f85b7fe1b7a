@@ -1,0 +1,9 @@
+package lesson09;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+		//线程休眠(掌握)
+
+	}
+}

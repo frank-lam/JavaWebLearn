@@ -1,0 +1,9 @@
+package lesson07;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+		//获取线程名字和设置名字(掌握) 
+
+	}
+}

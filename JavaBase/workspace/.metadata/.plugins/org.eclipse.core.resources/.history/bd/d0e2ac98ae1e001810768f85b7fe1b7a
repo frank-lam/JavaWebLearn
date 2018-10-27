@@ -1,0 +1,11 @@
+package lesson10;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+		//倒计时60秒
+		
+		//1.创建一个时间
+		int seconds = 60;
+	}
+}

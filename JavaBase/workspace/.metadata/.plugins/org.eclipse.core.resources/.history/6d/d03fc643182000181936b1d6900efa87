@@ -1,0 +1,16 @@
+package lesson03;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//回顾以前说过的线程安全问题 [看源码讲解]
+/*		Vector,StringBuffer,Hashtable,Collections.synchroinzed(xxx) 
+		Vector是线程安全的,ArrayList是线程不安全的 
+		StringBuffer是线程安全的,StringBuilder是线程不安全的 
+		Hashtable是线程安全的,HashMap是线程不安全的*/
+
+	}
+
+}

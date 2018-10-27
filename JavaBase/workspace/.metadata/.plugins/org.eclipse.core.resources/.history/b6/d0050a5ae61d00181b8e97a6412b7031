@@ -1,0 +1,21 @@
+package lesson09;
+
+import java.io.RandomAccessFile;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+		//随机访问流概述和读写数据
+/*		随机访问流概述
+		RandomAccessFile概述
+		RandomAccessFile类不属于流，是Object类的子类。但它融合了InputStream和OutputStream的功能。
+		支持对随机访问文件的读取和写入。*/
+
+		/**
+		 * 构造方法两个参数：
+		 * name:文件名称、路径
+		 * mode:模式 ，r=read w=write
+		 */
+		RandomAccessFile raf = new RandomAccessFile("a.txt", "r");
+	}
+}

@@ -1,0 +1,41 @@
+package lesson07;
+
+import java.lang.reflect.Constructor;
+
+import com.gyf.model.Teacher;
+
+public class Demo01 {
+
+	public static void main(String[] args) throws Exception{
+		//通过反射获取带参构造方法并使用
+		/**
+		 * 反射：用于获取类的方法和属性
+		 * 使用要点：
+		 *   1.如果要使用反射，先要获取字节码对象
+		 *   2.通过字节码对象的getConstructor()可以获取到构造方法对象
+		 *   3.构造方法对象(Contructor),有个newInstance方法创建这个字节码对象
+		 *   4.反射是在java.lang.reflect这个包中
+		 *   
+		 * 1.获取构造方法
+		 */
+		
+		//1.获取字节码对象
+		Class clz = Teacher.class;
+		
+		//2.获取构造方法
+		//2.1 无参构造方法
+		Constructor c1 = clz.getConstructor();
+	
+		//2.2 通过构造方法创建对象
+		Teacher teacher1 = (Teacher) c1.newInstance();
+		System.out.println("teacher1:" + teacher1);
+		
+		//2.3 获取有参构造方法
+		/**
+		 * parameterType 参数类型
+		 */
+		Constructor c2 = clz.getConstructor(String.class,String.class);
+		c2.newInstance("gyf","梅州");//相当于调用new Teacher("gyf","梅州")
+		
+	}
+}

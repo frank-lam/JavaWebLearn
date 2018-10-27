@@ -1,0 +1,60 @@
+package lesson11;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+		//正则表达式的构造摘要 - 数量词
+/*		X? X，一次或一次也没有
+		X* X，零次或多次
+		X+ X，一次或多次
+		X{n} X，恰好 n 次 
+		X{n,} X，至少 n 次 
+		X{n,m} X，至少 n 次，但是不超过 m 次 */
+
+		test4();
+	}
+	private static void test5() {
+		//X{n,} X，至少 n 次 
+		String regex = "\\d{4,}";//至少有4个数字
+		System.out.println("1112".matches(regex));
+		System.out.println("aa".matches(regex));
+		System.out.println("aaa".matches(regex));
+	}
+	
+	private static void test4() {
+		//X{n} X，恰好 n 次 
+		String regex = "a{3}";
+		System.out.println("a".matches(regex));
+		System.out.println("aa".matches(regex));
+		System.out.println("aaa".matches(regex));
+	}
+	
+	private static void test3() {
+		//X+ X，一次或多次
+		String regex = "a+";//至少有一个a
+		System.out.println("a".matches(regex));
+		System.out.println("".matches(regex));
+		System.out.println("aa".matches(regex));
+		System.out.println("aaa".matches(regex));
+	}
+	
+	
+	private static void test2() {
+		// TODO Auto-generated method stub
+		//X* X，零次或多次
+		String regex = "a*";//只能有a,或者空
+		System.out.println("a".matches(regex));
+		System.out.println("ab".matches(regex));
+		System.out.println("aa".matches(regex));
+		System.out.println("aaa".matches(regex));
+	}
+	
+	private static void test1() {
+		// TODO Auto-generated method stub
+		//X? X，一次或一次也没有
+		String regex = "a?";
+		System.out.println("a".matches(regex));
+		System.out.println("".matches(regex));
+		System.out.println("aa".matches(regex));
+	}
+}

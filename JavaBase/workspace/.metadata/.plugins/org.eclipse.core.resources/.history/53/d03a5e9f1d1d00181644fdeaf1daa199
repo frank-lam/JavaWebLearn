@@ -1,0 +1,11 @@
+package lesson12;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+		//SequenceInputStream 序列流
+		/**
+		 * InputStream:输入流
+		 */
+	}
+}

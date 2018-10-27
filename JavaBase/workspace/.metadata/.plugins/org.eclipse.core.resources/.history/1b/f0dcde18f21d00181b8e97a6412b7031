@@ -1,0 +1,30 @@
+package lesson12;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//捋一捋IO流
+		
+		/**
+		 * 一、IO流-输入输出流
+		 * I:input
+		 * O:out
+		 * IO流 操作文件，读取文件内容，往文件写内容
+		 * 
+		 * 二、字节流
+		 * 
+		 * >InputStream
+		 *  -FileInputStream 文件输入流，读的单位是字节
+		 *  -BufferedInputStream 缓冲输入流，内部有个byte[]字节数组
+		 * 
+		 * >OutputStream
+		 *  -FileOutputStream 文件输出流，写的单位是字节
+		 *  -BufferedOutputStream 缓冲输出流，内部有个byte[]字节数组
+		 * 
+		 * 
+		 */
+	}
+
+}

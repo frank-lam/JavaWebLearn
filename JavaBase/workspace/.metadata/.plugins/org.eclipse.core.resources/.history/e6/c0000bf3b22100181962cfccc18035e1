@@ -1,0 +1,22 @@
+package lesson06;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		//案例:UDP数据传输+键盘和循环+双线程实现(了解)
+	}
+}
+
+class Receiver extends Thread{
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+	}
+}
+
+class Sender extends Thread{
+	@Override
+	public void run() {
+		
+	}
+}

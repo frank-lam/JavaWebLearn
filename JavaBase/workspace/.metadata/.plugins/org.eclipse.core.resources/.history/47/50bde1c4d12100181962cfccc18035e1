@@ -1,0 +1,12 @@
+package lesson08;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+/*		校验qq号码. 
+		1:要求必须是5-15位数字 
+		2:0不能开头 
+		3:必须都是数字*/
+
+	}
+}

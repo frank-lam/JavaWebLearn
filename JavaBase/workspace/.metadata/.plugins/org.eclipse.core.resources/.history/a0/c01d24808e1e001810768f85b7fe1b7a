@@ -1,0 +1,22 @@
+package lesson07;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+/*		获取线程名字和设置名字(掌握) 
+		1.通过Thread的getName()方法获取线程对象的名字
+		2.通过setName(String)方法可以设置线程对象的名字
+		3.通过构造函数可以传入String类型的名字
+		*/
+		
+		//1.获取主线程对象
+		Thread mainThread = Thread.currentThread();
+		System.out.println(Thread.currentThread());
+		System.out.println(mainThread);
+		System.out.println("名称:" + mainThread.getName());
+		
+		//2.设置线程的名称
+		mainThread.setName("主线程");
+		System.out.println(mainThread);
+	}
+}

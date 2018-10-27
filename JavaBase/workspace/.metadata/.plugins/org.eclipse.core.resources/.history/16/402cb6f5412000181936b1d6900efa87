@@ -1,0 +1,38 @@
+package lesson07;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+/*		什么时候需要通信
+		1.多个线程并发执行时, 在默认情况下CPU是随机切换线程的
+		如果我们希望他们有规律的执行, 就可以使用通信, 例如每个线程执行一次打印
+		2.怎么通信？
+		如果希望线程等待, 就调用wait()
+		如果希望唤醒等待的线程, 就调用notify();
+		这两个方法必须在同步代码中执行, 并且使用同步锁对象来调用*/
+		
+		
+		//1.创建任务对象
+		MyTask task = new MyTask();
+		
+		//2.开启两个线程执行2个任务
+		new Thread(){
+			public void run() {
+				while(true){
+					
+				}
+			};
+		}.start();
+	}
+}
+
+class MyTask{
+	
+	public void task1(){
+		System.out.println("1.银行信用卡自动还款任务...");
+	}
+	
+	public void task2(){
+		System.out.println("2.银行储蓄卡自动结算利息任务...");
+	}
+}

@@ -1,0 +1,25 @@
+package lesson12;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+public class Demo01 {
+
+	public static void main(String[] args) throws IOException {
+		//SequenceInputStream 序列流
+		/**
+		 * InputStream:输入流
+		 * Sequence:序列 连续
+		 * 
+		 * 序列流可以把多个字节输入流整合成一个, 从序列流中读取数据时, 
+		 * 将从被整合的第一个流开始读, 读完一个之后继续读第二个, 以此类推.
+		 */
+		
+		//需求：a.txt,b.txt 依次写c.txt
+		//1.创建两个输入流
+		FileInputStream fis1 = new FileInputStream("a.txt");
+		
+		//2.创建一个输出流
+	}
+}

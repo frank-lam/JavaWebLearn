@@ -1,0 +1,31 @@
+package lesson01;
+
+import java.util.concurrent.Executors;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+		//Java设计模式-工厂设计模式
+		/**
+		 * 工厂设计模式
+		 * 1.工厂方法模式
+		 * 2.简单工厂模式 Executors.newCachedThreadPool();
+		 */
+		
+		// 1.工厂方法模式
+/*		简单工厂模式概述
+		又叫静态工厂方法模式，它定义一个具体的工厂类负责创建一些类的实例
+		优点
+		客户端不需要在负责对象的创建，从而明确了各个类的职责
+		缺点
+		这个静态工厂类负责所有对象的创建，如果有新的对象增加，或者某些对象的创建方式不同，就需要不断的修改工厂类，不利于后期的维护
+
+		案例演示
+		动物抽象类：public class abstract Animal { public abstract void eat(); } 
+		具体狗类：public class Dog extends Animal {} 
+		具体猫类：public class Cat extends Animal {} 
+		动物工厂类*/
+
+		
+	}
+}

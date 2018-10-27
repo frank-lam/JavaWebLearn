@@ -1,0 +1,24 @@
+package lesson15;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+		//枚举类的常见方法
+/*		int ordinal()
+		int compareTo(E o)
+		String name()
+		String toString()
+		<T> T valueOf(Class<T> type,String name)通过字节码对象获取枚举对象
+		values() 此方法虽然在JDK文档中查找不到，但每个枚举类都具有该方法，它遍历枚举类的所有枚举值非常方便
+*/
+		//1.获取枚举对象
+		Season s1 = Season.SPRING;
+		Season s2 = Season.SUMMER;
+		System.out.println("s1:" + s1.ordinal());
+		System.out.println("s2:" + s2.ordinal());
+	}
+}
+
+enum Season{
+	SPRING,SUMMER,AUTUMN,WINTER;
+}

@@ -1,0 +1,42 @@
+package lesson14;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+		//同步代码块和同步方法
+		
+		//火车站卖票
+		/**
+		 * 湖南到广州火车票：今天13：00 ，100张
+		 * 火车站有4个窗口在同时卖票，要保证一张票只能被卖一次
+		 * 
+		 * 搞4个线程表示4个窗口
+		 */
+		
+		//创建卖票的任务
+		TicketTask task = new TicketTask();
+		
+		Thread t1 = new Thread(task);
+	}
+}
+
+class TicketTask implements Runnable{
+
+	//只有100张票
+	int ticket = 100;
+	
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		//卖票
+		while(true){
+			if(ticket <= 0){
+				System.out.println("不好意思，票已经卖完了...");
+			}else{
+				System.out.println("恭喜你卖到票，票号" + ticket);
+				ticket --;
+			}
+		}
+	}
+	
+}

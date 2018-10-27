@@ -1,0 +1,8 @@
+package lesson04;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+		//BufferedWriter的newLine()方法
+	}
+}

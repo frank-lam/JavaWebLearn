@@ -1,0 +1,25 @@
+package lesson10;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+public class Demo01 {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+
+		//DataOutputStream&DataInputStream 数据输入输出流
+/*		DataInputStream, DataOutputStream可以按照基本数据类型大小读写数据 
+		例如按Long大小写出一个数字, 写出时该数据占8字节. 
+		读取的时候也可以按照Long类型读取, 一次读取8个字节.*/
+
+		long a = 997;
+		long b = 998;
+		long c = 999;
+		
+		FileOutputStream fis = new FileInputStream("a.txt");
+		fis.wri
+	}
+
+}

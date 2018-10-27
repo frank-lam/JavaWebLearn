@@ -1,0 +1,10 @@
+package lesson06;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+		//匿名内部类实现线程的两种方式
+
+	}
+	
+}

@@ -1,0 +1,14 @@
+package lesson08;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+		//获取当前线程的对象(掌握)
+/*		Thread.currentThread(), 主线程也可以获取
+		Thread.currentThread().setName(“我是主线程”); 设置当前线程名字
+		Thread.currentThread().getClass().getName();获取线程类名*/
+
+		Thread.currentThread();
+		
+	}
+}

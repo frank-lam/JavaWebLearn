@@ -1,0 +1,17 @@
+package lesson11;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+		//守护线程
+/*		setDaemon(), 设置一个线程为守护线程, 该线程不会单独执行, 
+		当其他非守护线程都执行结束后, 自动退出*/
+		
+		
+		Thread t1 = new Thread(){
+			public void run() {
+				
+			};
+		}.start();
+	}
+}

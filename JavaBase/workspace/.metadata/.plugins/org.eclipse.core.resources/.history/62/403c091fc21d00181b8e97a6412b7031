@@ -1,0 +1,31 @@
+package lesson05;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+		//对象操作流优化
+		
+		//把女朋友对象存在List中，再把List写入文件
+		
+		//1.创建集合
+		List<GirlFriend> list = new ArrayList<GirlFriend>();
+	}
+}
+
+class GirlFriend implements Serializable{
+	String name;
+	double height;
+	public GirlFriend(String name, double height) {
+		super();
+		this.name = name;
+		this.height = height;
+	}
+	@Override
+	public String toString() {
+		return "GirlFriend [name=" + name + ", height=" + height + "]";
+	}
+}

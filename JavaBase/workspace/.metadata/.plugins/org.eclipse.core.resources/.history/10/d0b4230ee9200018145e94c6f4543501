@@ -1,0 +1,12 @@
+package lesson06;
+
+public class Demo01 {
+
+	public static void main(String[] args) throws ClassNotFoundException {
+		//Class类中静态方法forName() 读取配置文件
+		
+		String className = "com.gyf.model.Dog";
+		Class clz = Class.forName(className);
+		System.out.println(clz);
+	}
+}

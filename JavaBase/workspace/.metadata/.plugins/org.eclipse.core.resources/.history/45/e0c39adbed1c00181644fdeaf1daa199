@@ -1,0 +1,15 @@
+package lesson02;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		/**
+		 * 带缓冲的字符流
+		 * 
+		 * 回顾：带缓冲的字节流,BufferedInputStream/BufferedOutputStream
+		 */
+	}
+
+}

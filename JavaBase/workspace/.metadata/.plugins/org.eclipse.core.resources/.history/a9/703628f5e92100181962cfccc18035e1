@@ -1,0 +1,30 @@
+package lesson04;
+
+import java.io.IOException;
+import java.net.DatagramPacket;
+import java.net.DatagramSocket;
+import java.net.SocketException;
+
+public class Demo_Receiver {
+
+	public static void main(String[] args) throws IOException {
+//		2.接收Receive
+//		创建DatagramSocket, 指定端口号
+		DatagramSocket receiver = new DatagramSocket(5288);
+		
+//		创建DatagramPacket, 指定数组, 长度
+		byte[] buf = new byte[1024];
+		DatagramPacket packet = new DatagramPacket(buf, 1024);
+		
+//		使用DatagramSocket接收DatagramPacket
+		receiver.receive(packet);
+		
+//		关闭DatagramSocket
+		receiver.close();
+		
+//		从PackeDatagramt中获取数据
+		String s = new String(buf, 0, packet.getLength(), "UTF-8");
+		System.out.println("接收到数据:" + s);
+
+	}
+}

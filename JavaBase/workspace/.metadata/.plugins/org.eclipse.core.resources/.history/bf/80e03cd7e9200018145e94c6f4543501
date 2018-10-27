@@ -1,0 +1,31 @@
+package com.gyf.model;
+
+public class Teacher {
+
+	private String name;
+	private String homntown;
+	private double height;
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getHomntown() {
+		return homntown;
+	}
+	public void setHomntown(String homntown) {
+		this.homntown = homntown;
+	}
+	public Teacher() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public Teacher(String name, String homntown) {
+		super();
+		this.name = name;
+		this.homntown = homntown;
+	}
+	
+	
+}

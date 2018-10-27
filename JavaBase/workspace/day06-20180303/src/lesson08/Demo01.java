@@ -1,0 +1,37 @@
+package lesson08;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+		//获取当前线程的对象(掌握)
+/*		Thread.currentThread(), 主线程也可以获取
+		Thread.currentThread().setName(“我是主线程”); 设置当前线程名字
+		Thread.currentThread().getClass().getName();获取线程类名*/
+
+		Thread mainThread = Thread.currentThread();
+		mainThread.setName("主线程");
+		//打印主线程对象
+		System.out.println(mainThread);
+		
+		//打印主线程对象类名
+		System.out.println(mainThread.getClass());
+		
+		System.out.println("================");
+		//开启子线程
+		MyThread mt = new MyThread();
+		mt.start();
+	}
+}
+
+class MyThread extends Thread{
+	@Override
+	public void run() {
+		System.out.println("任务...");
+		Thread subThread = Thread.currentThread();
+		//打印子线程对象
+		System.out.println(subThread);
+		//打印子线程对象类名
+		System.out.println(subThread.getClass().getName());
+		
+	}
+}

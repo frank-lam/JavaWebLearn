@@ -1,0 +1,9 @@
+package lesson15;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+		//枚举类的常见方法
+
+	}
+}

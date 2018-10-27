@@ -1,0 +1,51 @@
+package lesson06;
+
+import java.net.DatagramPacket;
+import java.net.DatagramSocket;
+import java.util.Date;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		//案例:UDP数据传输+键盘和循环+双线程实现(了解)
+	}
+}
+
+class Receiver extends Thread{
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		try {
+	
+//		创建DatagramSocket, 指定端口号
+		DatagramSocket receiver = new DatagramSocket(5288);
+		
+		while(true){
+//			创建DatagramPacket, 指定数组, 长度
+			byte[] buf = new byte[1024];
+			DatagramPacket packet = new DatagramPacket(buf, 1024);
+			
+//			使用DatagramSocket接收DatagramPacket
+			receiver.receive(packet);
+			
+//			关闭DatagramSocket
+			//receiver.close();
+			
+//			从PackeDatagramt中获取数据
+			String s = new String(buf, 0, packet.getLength(), "UTF-8");
+			System.out.println(new Date() + "接收到数据:" + s);
+		}
+		
+		
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+}
+
+class Sender extends Thread{
+	@Override
+	public void run() {
+		
+	}
+}

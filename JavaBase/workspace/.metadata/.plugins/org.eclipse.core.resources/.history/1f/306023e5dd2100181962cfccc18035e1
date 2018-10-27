@@ -1,0 +1,13 @@
+package lesson14;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+		//正则表达式的替换功能
+		//public String replaceAll(String regex,String replacement)
+		
+		String s = "520 java 520 h5 520 c";
+
+
+	}
+}

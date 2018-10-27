@@ -1,0 +1,125 @@
+package lesson10;
+
+import java.util.concurrent.locks.Condition;
+import java.util.concurrent.locks.ReentrantLock;
+
+import lesson08.MyTask;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//JDK1.5新特性互斥锁
+	/*	同步加锁
+		使用ReentrantLock类[互斥锁]的lock()和unlock()方法进行同步
+		通信
+		使用ReentrantLock类的newCondition()方法可以获取Condition对象
+		需要等待的时候使用Condition的await()方法, 唤醒的时候用signal()方法
+		不同的线程使用不同的Condition, 这样就能区分唤醒的时候找哪个线程了*/
+		//三个线程间的通讯
+				MyTask task = new MyTask();
+				new Thread(){
+					public void run() {
+						while(true){
+							try {
+								task.task1();
+							} catch (InterruptedException e1) {
+								// TODO Auto-generated catch block
+								e1.printStackTrace();
+							}
+							try {
+								Thread.sleep(10);
+							} catch (InterruptedException e) {
+								// TODO Auto-generated catch block
+								e.printStackTrace();
+							}
+						}
+					};
+				}.start();
+				new Thread(){
+					public void run() {
+						while(true){
+							try {
+								task.task2();
+							} catch (InterruptedException e1) {
+								// TODO Auto-generated catch block
+								e1.printStackTrace();
+							}
+							try {
+								Thread.sleep(10);
+							} catch (InterruptedException e) {
+								// TODO Auto-generated catch block
+								e.printStackTrace();
+							}
+						}
+					};
+				}.start();
+				new Thread(){
+					public void run() {
+						while(true){
+							try {
+								task.task3();
+							} catch (InterruptedException e1) {
+								// TODO Auto-generated catch block
+								e1.printStackTrace();
+							}
+							try {
+								Thread.sleep(10);
+							} catch (InterruptedException e) {
+								// TODO Auto-generated catch block
+								e.printStackTrace();
+							}
+						}
+					};
+				}.start();
+	}
+
+}
+
+class MyTask{
+	//创建互斥锁对象
+	ReentrantLock rl = new ReentrantLock();
+	//创建3个Condition
+	Condition c1 = rl.newCondition();
+	
+	//标识 1:可以执行任务1，2:可以执行任务2, 3:可以执行任务3 
+	int flag = 1;
+	
+	public synchronized void task1() throws InterruptedException{
+		if(flag != 1){
+			this.wait();//当前线程等待
+			//this.wait(timeout);
+		}
+		
+		System.out.println("1.银行信用卡自动还款任务...");
+		flag = 2;
+		//this.notify();//唤醒随机线程
+		this.notifyAll();//唤醒所有等待线程
+		
+	}
+	
+	public synchronized void task2() throws InterruptedException{
+		
+		if(flag != 2){
+			this.wait();//线程等待
+		}
+		
+		System.out.println("2.银行储蓄卡自动结算利息任务...");
+		flag = 3;
+		//this.notify();//唤醒其它线程
+		this.notifyAll();
+		//Thread.sleep(millis);
+	}
+	
+	public synchronized void task3() throws InterruptedException{
+			if(flag != 3){
+				this.wait();//线程等待
+			}
+			
+			System.out.println("3.银行短信提醒任务...");
+			flag = 1;
+			//this.notify();//唤醒其它线程
+			this.notifyAll();
+	}
+}

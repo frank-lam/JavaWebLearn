@@ -1,0 +1,9 @@
+package lesson08;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+		//标准输入输出流概述和输出语句(了解)
+
+	}
+}

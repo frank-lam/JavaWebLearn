@@ -1,0 +1,48 @@
+package lesson03;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+
+public class Demo01 {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		//对象操作流ObjectOutputStream& ObjectInputStream
+		/**
+		 * ObjectOutputStream：将一个对象写入文件
+		 * ObjectInputStream：从文件中读一个对象
+		 */
+		
+		//案例：将对象直接存入文件
+		//1.创建女朋友对象
+		GirlFriend gf1 = new GirlFriend("林志玲", 1.78);
+		
+		//2.创建对象输出流
+		FileOutputStream fos = new FileOutputStream("gf.txt");
+		ObjectOutputStream oos = new ObjectOutputStream(fos);
+		
+		//3.往文件存入对象
+		oos.writeObject(gf1);
+		
+		//4.关注
+	}
+
+}
+
+class GirlFriend{
+	String name;
+	double height;
+	public GirlFriend(String name, double height) {
+		super();
+		this.name = name;
+		this.height = height;
+	}
+	@Override
+	public String toString() {
+		return "GirlFriend [name=" + name + ", height=" + height + "]";
+	}
+	
+	
+}

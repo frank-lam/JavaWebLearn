@@ -1,0 +1,14 @@
+package lesson01;
+
+import com.gyf.model.Animal;
+import com.gyf.model.Pig;
+
+public class PigFactory extends AnimalFactory{
+	@Override
+	public Animal createAnimal() {
+		// TODO Auto-generated method stub
+		Pig pig = new Pig();
+		return pig;
+	}
+
+}

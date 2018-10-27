@@ -1,0 +1,12 @@
+package lesson01;
+
+public class PigFactory extends AnimalFactory{
+
+	@Override
+	public Animal createAnimal() {
+		// TODO Auto-generated method stub
+		Pig pig = new Pig();
+		return null;
+	}
+
+}

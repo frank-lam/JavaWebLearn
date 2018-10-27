@@ -1,0 +1,24 @@
+package lesson05;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+		//案例:将文本反转写入另一个文件
+		
+		//1.把文本每一行内容读取出来存在List<String> 集合
+		//1.1 集合对象
+		List<String> list = new ArrayList<String>();
+		
+		//1.2一行行读取文件
+		BufferedReader br = new BufferedReader(new FileReader("a.txt"));
+		
+		
+		//2.当我们要写入文件时，倒序保存List集合中的内容到文件中
+	}
+}

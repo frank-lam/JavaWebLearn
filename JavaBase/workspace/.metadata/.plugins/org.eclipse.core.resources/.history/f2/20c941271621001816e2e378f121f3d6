@@ -1,0 +1,32 @@
+package lesson13;
+
+public class Demo02 {
+
+	public static void main(String[] args) {
+		//模版(Template)设计模式
+		/**
+		 * 模版模式就是定义一个算法的骨架，而将具体的算法延迟到子类中来实现
+		 * 
+		 * 设计一个计算耗时的模版
+		 * 
+		 */
+	}
+}
+
+abstract class TimeTemplate{
+	//获取执行时间
+	public long getScheduleTime(){
+		long start = System.currentTimeMillis();
+		code();
+		long end = System.currentTimeMillis();
+		long delta = end - start;//设置时间差
+		return delta;
+	}
+	
+	public abstract void code();
+}
+
+class Test1 extends TimeTemplate{
+	
+}
+

@@ -1,0 +1,15 @@
+package lesson09;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+		//递归
+		/**
+		 * 递归做为一种算法,在程序设计语言中广泛应用。 
+		      递归：就方法内部调用自己
+		 */
+		
+		//5！-5的阶乘，5个乘阶
+		//5*4*3*2*1
+	}
+}

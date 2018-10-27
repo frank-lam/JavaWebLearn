@@ -1,0 +1,15 @@
+package lesson05;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+/*		获取字节码对象(Class)的三种方式
+		1.Object类的getClass()方法,判断两个对象是否是同一个字节码文件
+		2.静态属性class,锁对象
+		3.Class类中静态方法forName(),读取配置文件*/
+		
+		//1.Object类的getClass()方法
+	}
+
+}

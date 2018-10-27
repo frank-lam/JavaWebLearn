@@ -1,0 +1,55 @@
+package lesson06;
+
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	/*	Serializable接口的ID
+		1.要归档或者序列化的对象必须实现Serializable接口才能被序列化 
+		2.Serializable 中有个id，但ID不是一定要加的
+		3.SerialVersionUid，简言之，其目的是以序列化对象进行版本控制，有关各版本反序列化时是否兼容。
+		4.如果在新版本中这个值修改了，新版本就不兼容旧版本，反序列化时会抛出InvalidClassException异常。
+		5.如果修改较小，比如仅仅是增加了一个属性，我们希望向下兼容，老版本的数据都能保留，那就不用修改；
+		6.如果我们删除了一个属性，或者更改了类的继承关系，必然不兼容旧数据，这时就应该手动更新版本号，即SerialVersionUid。
+*/
+		
+		//1.创建学生对象
+		Student stu = new Student("霍建华");
+		
+		//2.把学生存入文件
+		ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("stu.data"));
+		oos.writeObject(stu);
+		
+	}
+
+}
+
+
+class Student implements Serializable{
+
+	/**
+	 * 序列化版本ID
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	private String name;
+
+	public Student(String name) {
+		super();
+		this.name = name;
+	}
+
+	@Override
+	public String toString() {
+		return "Student [name=" + name + "]";
+	}
+	
+	
+	
+	
+}

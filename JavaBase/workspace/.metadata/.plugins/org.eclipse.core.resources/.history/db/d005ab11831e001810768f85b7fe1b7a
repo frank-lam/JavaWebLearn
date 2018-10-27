@@ -1,0 +1,14 @@
+package lesson02;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+/*		JVM的启动是多线程的吗？【面试题】
+		JVM启动至少启动了垃圾回收线程和主线程，所以是多线程的。*/
+		
+		System.out.println("AAAAA");
+		System.out.println("BBBBB");
+		System.out.println("CCCCC");
+		System.out.println("DDDDD");
+	}
+}

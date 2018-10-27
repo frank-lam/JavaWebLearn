@@ -1,0 +1,25 @@
+package lesson06;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+		//匿名内部类实现线程的两种方式
+
+		/**
+		 * 实现线程方式2种
+		 * 1.继承Thread
+		 * 2.实现Runnable接口
+		 */
+		
+		Thread t1 = new Thread(){};
+	}
+	
+}
+
+/*class MyThread extends Thread{
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		//任务 ......
+	}
+}*/

@@ -1,0 +1,66 @@
+package lesson06;
+
+import java.util.Date;
+import java.util.Timer;
+import java.util.TimerTask;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+		//Timer（计时器,定时器）
+/*		一种工具，用于在后台线程中执行的任务。可安排任务执行一次，或者定期重复执行。
+		方法
+		public void schedule(TimerTask task, long delay)
+		public void schedule(TimerTask task, long delay, long period) 
+		指定时间执行任务
+		public void schedule(TimerTask task, Date firstTime, long period)*/
+
+		
+		Timer timer = new Timer();
+		timer.schedule(new TimerTask() {
+			
+			@Override
+			public void run() {
+				// TODO Auto-generated method stub
+				System.out.println("任务A：" + Thread.currentThread());
+			}
+		}, 1000);
+		
+
+	}
+
+	public static void test2() {
+		//3秒后执行任务,每隔两秒重复执行任务
+		Timer timmer = new Timer();
+		timmer.schedule(new TimerTask() {
+			
+			@Override
+			public void run() {
+				// TODO Auto-generated method stub
+				System.out.println("任务A....." + new Date());
+				
+			}
+		}, 3000, 2000);
+	}
+
+	//3秒后执行任务
+	public static void test1() {
+		//1.创建定时器
+		Timer timmer = new Timer();
+		
+		//2.执行任务
+		/**
+		 * 1.3秒后执行任务
+		 * 2.任务执行完后，程序没有退出
+		 */
+		timmer.schedule(new TimerTask() {
+			
+			@Override
+			public void run() {
+				// TODO Auto-generated method stub
+				System.out.println("任务A....");
+				
+			}
+		}, 3000);
+	}
+}

@@ -1,0 +1,53 @@
+package com.gyf.model;
+
+public class Teacher {
+
+	private String name;
+	private String homntown;
+	private double height;
+	public String color;
+	
+	public Teacher() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public Teacher(String name, String homntown) {
+		super();
+		this.name = name;
+		this.homntown = homntown;
+	}
+	public Teacher(String name, double height) {
+		super();
+		this.name = name;
+		this.height = height;
+	}
+	@Override
+	public String toString() {
+		return "Teacher [name=" + name + ", homntown=" + homntown + ", height=" + height + ", color=" + color + "]";
+	}
+	
+	/*public void say1(){
+		System.out.println("我是一只小黄鸡...");
+	}
+	
+	public void say2(String name){
+		System.out.println("我是一只" + name);
+	}
+	
+	public void say3(String name,int age){
+		System.out.println("我是一只" + name + " 今年" + age);
+	}*/
+	
+	private void say1(){
+		System.out.println("我是一只小黄鸡...");
+	}
+	
+	private void say2(String name){
+		System.out.println("我是一只" + name);
+	}
+	
+	private void say3(String name,int age){
+		System.out.println("我是一只" + name + " 今年" + age);
+	}
+
+}

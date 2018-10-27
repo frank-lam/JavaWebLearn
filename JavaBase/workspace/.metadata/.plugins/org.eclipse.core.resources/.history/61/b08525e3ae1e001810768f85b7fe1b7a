@@ -1,0 +1,30 @@
+package lesson10;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+		//倒计时60秒
+		
+		//1.创建一个时间
+		int seconds = 60;
+		
+		//2.开始倒计时
+		new Thread(new Runnable() {
+			@Override
+			public void run() {
+				
+				for(int i=0;i<seconds;i++){
+					System.out.println("剩余" + seconds + "秒");
+					seconds --;
+					
+					try {
+						Thread.sleep(1000);
+					} catch (Exception e) {
+						// TODO: handle exception
+					}
+				}
+				
+			}
+		}).start();
+	}
+}

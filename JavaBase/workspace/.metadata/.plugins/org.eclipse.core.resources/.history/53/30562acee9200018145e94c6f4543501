@@ -1,0 +1,21 @@
+package com.gyf.model;
+
+public class Teacher {
+
+	private String name;
+	private String homntown;
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getHomntown() {
+		return homntown;
+	}
+	public void setHomntown(String homntown) {
+		this.homntown = homntown;
+	}
+	
+	
+}

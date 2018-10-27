@@ -1,0 +1,8 @@
+package lesson02;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+		//JVM的启动是多线程的吗？
+	}
+}

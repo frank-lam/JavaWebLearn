@@ -1,0 +1,22 @@
+package lesson01;
+
+import java.io.FileOutputStream;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+		//ByteArrayOutputStream 字节数组输出流
+		/**
+		 * 1.前面学习的流-必需关于一个文件
+		 * FileOutputStream fos = new FileOutputStream("a.txt")
+		 * 
+		 * 2.ByteArrayOutputStream 不需要关联文件
+		 * 	
+		 * 3.此类实现了一个输出流，其中的数据被写入一个 byte 数组。
+		 * 	缓冲区会随着数据的不断写入而自动增长。
+		 *  可使用 toByteArray() 和 toString() 获取数据。
+		 */
+		
+		
+	}
+}

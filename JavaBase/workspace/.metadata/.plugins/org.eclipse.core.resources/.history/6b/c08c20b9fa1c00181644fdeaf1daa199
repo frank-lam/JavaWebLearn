@@ -1,0 +1,12 @@
+package lesson07;
+
+public class Demo02 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	/*	OutputStreamWriter
+		1>使用指定的编码 写入文件
+		*/
+	}
+
+}

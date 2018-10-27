@@ -1,0 +1,10 @@
+package lesson02;
+
+import com.gyf.model.Dog;
+
+public class AnimalFactory {
+
+	public static Dog createDog(){
+		
+	}
+}

@@ -1,0 +1,13 @@
+package lesson03;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+		//BufferedReader的readLine()&BufferedWriter的newLine()方法
+		/**
+		 * 1.readLine()，每次读取一个数据
+		 */
+		
+		
+	}
+}

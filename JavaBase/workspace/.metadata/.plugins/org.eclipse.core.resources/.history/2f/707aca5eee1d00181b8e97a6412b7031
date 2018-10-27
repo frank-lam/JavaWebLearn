@@ -1,0 +1,26 @@
+package lesson11;
+
+import java.io.FileOutputStream;
+import java.util.Properties;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+		//Properties的概述和作为Map集合的使用
+
+		/**
+		 * Properties:属性
+			1.Properties 类表示了一个持久的属性集。
+			2.Properties 可保存在流中或从流中加载。
+			3.属性列表中每个键及其对应值都是一个字符串。
+		 */
+		
+		//1.创建属性对象
+		Properties p = new Properties();
+		
+		//2.关联文件
+		p.store(new FileOutputStream("info.properties"), comments);
+		
+		
+	}
+}

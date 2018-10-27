@@ -1,0 +1,9 @@
+package lesson10;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+		//正则表达式的构造摘要 -预定义字符类
+
+	}
+}

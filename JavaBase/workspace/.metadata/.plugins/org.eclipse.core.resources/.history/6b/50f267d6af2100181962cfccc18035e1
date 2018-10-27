@@ -1,0 +1,18 @@
+package lesson03;
+
+import java.net.DatagramPacket;
+import java.net.DatagramSocket;
+import java.net.SocketException;
+
+public class Demo_Sender {
+
+	public static void main(String[] args) throws Exception {
+//		1.发送Send
+//		创建DatagramSocket, 随机端口号
+		DatagramSocket sender = new DatagramSocket();
+		
+//		创建DatagramPacket, 指定数据, 长度, 地址, 端口
+//		使用DatagramSocket发送DatagramPacket
+//		关闭DatagramSockets
+	}
+}

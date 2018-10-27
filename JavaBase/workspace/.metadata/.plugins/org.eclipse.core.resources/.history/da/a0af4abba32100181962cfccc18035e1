@@ -1,0 +1,13 @@
+package lesson01;
+
+import java.awt.Frame;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+		//创建一个窗口并显示
+		//1.创建窗口对象
+		Frame window = new Frame("我是一个窗口");
+
+	}
+}

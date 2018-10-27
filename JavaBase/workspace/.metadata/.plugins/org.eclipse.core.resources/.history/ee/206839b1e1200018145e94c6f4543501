@@ -1,0 +1,23 @@
+package lesson02;
+
+import com.gyf.model.Animal;
+import com.gyf.model.Dog;
+import com.gyf.model.Pig;
+
+public class AnimalFactory {
+
+	/*public static Dog createDog(){
+		Dog dog = new Dog();
+		return dog;
+	}*/
+	
+	public static Animal createDog(){
+		Dog dog = new Dog();
+		return dog;
+	}
+	
+	public static Pig createPig(){
+		Pig pig = new Pig();
+		return pig;
+	}
+}

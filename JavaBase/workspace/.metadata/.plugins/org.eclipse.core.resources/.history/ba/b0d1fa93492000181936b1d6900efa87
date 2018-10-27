@@ -1,0 +1,75 @@
+package lesson10;
+
+import lesson08.MyTask;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//JDK1.5新特性互斥锁
+	/*	同步加锁
+		使用ReentrantLock类[互斥锁]的lock()和unlock()方法进行同步
+		通信
+		使用ReentrantLock类的newCondition()方法可以获取Condition对象
+		需要等待的时候使用Condition的await()方法, 唤醒的时候用signal()方法
+		不同的线程使用不同的Condition, 这样就能区分唤醒的时候找哪个线程了*/
+		//三个线程间的通讯
+				MyTask task = new MyTask();
+				new Thread(){
+					public void run() {
+						while(true){
+							try {
+								task.task1();
+							} catch (InterruptedException e1) {
+								// TODO Auto-generated catch block
+								e1.printStackTrace();
+							}
+							try {
+								Thread.sleep(10);
+							} catch (InterruptedException e) {
+								// TODO Auto-generated catch block
+								e.printStackTrace();
+							}
+						}
+					};
+				}.start();
+				new Thread(){
+					public void run() {
+						while(true){
+							try {
+								task.task2();
+							} catch (InterruptedException e1) {
+								// TODO Auto-generated catch block
+								e1.printStackTrace();
+							}
+							try {
+								Thread.sleep(10);
+							} catch (InterruptedException e) {
+								// TODO Auto-generated catch block
+								e.printStackTrace();
+							}
+						}
+					};
+				}.start();
+				new Thread(){
+					public void run() {
+						while(true){
+							try {
+								task.task3();
+							} catch (InterruptedException e1) {
+								// TODO Auto-generated catch block
+								e1.printStackTrace();
+							}
+							try {
+								Thread.sleep(10);
+							} catch (InterruptedException e) {
+								// TODO Auto-generated catch block
+								e.printStackTrace();
+							}
+						}
+					};
+				}.start();
+	}
+
+}

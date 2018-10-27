@@ -1,0 +1,24 @@
+package lesson01;
+
+import java.awt.Frame;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+		//创建一个窗口并显示
+		//1.创建窗口对象
+		Frame window = new Frame("我是一个窗口");
+		
+		//2.设置窗口的大小
+		window.setSize(400, 400);
+		
+		//3.设置位置
+		window.setLocation(200, 200);
+		
+		
+		
+		//显示窗口
+		window.setVisible(true);
+		
+	}
+}

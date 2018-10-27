@@ -1,0 +1,70 @@
+package lesson03;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInput;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
+
+public class Demo01 {
+
+	public static void main(String[] args) throws IOException, ClassNotFoundException {
+		// TODO Auto-generated method stub
+		//对象操作流ObjectOutputStream& ObjectInputStream
+		/**
+		 * 一、ObjectOutputStream：将一个对象写入文件
+		 * 	  1.如果使用这个类写入对象，这个对象需要序列化
+		 *    2.序列化就是让这个对象实现一个Serializable接口
+		 *    3.如果没实现Serializable接口，会抛异常NotSerializableException
+
+		 * 二、ObjectInputStream：从文件中读一个对象
+		 */
+		
+		//案例：从文件中取出女朋友对象
+		//1.创建一个对象输入流
+		FileInputStream fis = new FileInputStream("gf.data");
+		ObjectInputStream ois = new ObjectInputStream(fis);
+		
+		//2.读数据
+		Object obj1 = ois.readObject();
+		System.out.println(obj1.getClass());
+	}
+
+	public static void test1() throws FileNotFoundException, IOException {
+		//案例：将对象直接存入文件
+		//1.创建女朋友对象
+		GirlFriend gf1 = new GirlFriend("林志玲", 1.78);
+		GirlFriend gf2 = new GirlFriend("林心如", 1.68);
+		
+		//2.创建对象输出流
+		FileOutputStream fos = new FileOutputStream("gf.data");
+		ObjectOutputStream oos = new ObjectOutputStream(fos);
+		
+		//3.往文件存入对象
+		oos.writeObject(gf1);
+		oos.writeObject(gf2);
+		
+		//4.关流
+		oos.close();
+	}
+
+}
+
+class GirlFriend implements Serializable{
+	String name;
+	double height;
+	public GirlFriend(String name, double height) {
+		super();
+		this.name = name;
+		this.height = height;
+	}
+	@Override
+	public String toString() {
+		return "GirlFriend [name=" + name + ", height=" + height + "]";
+	}
+	
+	
+}

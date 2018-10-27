@@ -1,0 +1,31 @@
+package lesson02;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class Demo01 {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+
+		/**
+		 * 带缓冲的字符流 BufferedReader/BufferedWriter
+		 * 1.这两个类，内部都一个缓冲区，字符数组
+		 * 
+		 * 回顾：带缓冲的字节流,BufferedInputStream/BufferedOutputStream
+		 * 1.这两个类，内部都一个缓冲区，字节数组
+		 */
+		
+		
+		//需求：拷贝文件,a.txt -> b.txt
+		//1.创建Reader
+		FileReader fr = new FileReader("a.txt");
+		BufferedReader br = new BufferedReader(fr);
+		
+		
+	}
+
+}

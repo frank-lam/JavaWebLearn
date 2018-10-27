@@ -1,0 +1,19 @@
+package lesson03;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//对象操作流ObjectOutputStream& ObjectInputStream
+		/**
+		 * ObjectOutputStream：将一个对象写入文件
+		 * ObjectInputStream：从文件中读一个对象
+		 */
+	}
+
+}
+
+class GirlFriend{
+	String name;
+	double height;
+}

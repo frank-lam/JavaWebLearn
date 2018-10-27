@@ -1,0 +1,19 @@
+package lesson06;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//
+		/**
+		 * 一、设计模式【一种固定代码风格】
+		 *     面试题：Java中有哪些设计模式
+		 *     常用设计模式：装饰模式、单例模式、模版模式、适配器模式、代理模式、工厂模式...
+		 * 
+		 * 二、装饰(Decorator)设计模式
+		 * 		
+		 */
+	}
+
+}

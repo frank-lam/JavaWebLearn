@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="javaweb_upload:war">
+    <output-path>$PROJECT_DIR$/out/artifacts/javaweb_upload_war</output-path>
+    <root id="archive" name="javaweb_upload_war.war">
+      <element id="artifact" artifact-name="javaweb_upload:war exploded" />
+    </root>
+  </artifact>
+</component>

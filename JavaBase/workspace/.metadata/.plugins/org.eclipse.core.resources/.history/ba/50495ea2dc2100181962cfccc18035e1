@@ -1,0 +1,14 @@
+package lesson13;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+		//案例:把给定字符串中的数字排序
+	/*	需求：
+		我有如下一个字符串:"91 27 46 38 50"，
+		请写代码实现最终输出结果是："27 38 46 50 91"*/
+		
+		String s = "91 27 46 38 50";
+
+	}
+}

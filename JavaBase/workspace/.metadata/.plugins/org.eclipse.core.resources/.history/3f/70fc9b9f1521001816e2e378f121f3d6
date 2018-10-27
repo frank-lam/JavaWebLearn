@@ -1,0 +1,11 @@
+package lesson13;
+
+public class Demo02 {
+
+	public static void main(String[] args) {
+		//模版(Template)设计模式
+		/**
+		 * 设计一个计算耗时的模版
+		 */
+	}
+}

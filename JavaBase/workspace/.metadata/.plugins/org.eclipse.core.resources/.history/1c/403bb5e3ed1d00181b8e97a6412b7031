@@ -1,0 +1,9 @@
+package lesson11;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+		//Properties的概述和作为Map集合的使用
+
+	}
+}

@@ -1,0 +1,9 @@
+package lesson04;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+		//单例设计模式 (掌握) 
+
+	}
+}

@@ -1,0 +1,13 @@
+package lesson07;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+/*		InputStreamReader&OutputStreamWriter
+		1>这两个类用于使用指定的码表读写字符*/
+		
+		
+		//案例：使用指定 “码表” 读取字符
+		
+	}
+}

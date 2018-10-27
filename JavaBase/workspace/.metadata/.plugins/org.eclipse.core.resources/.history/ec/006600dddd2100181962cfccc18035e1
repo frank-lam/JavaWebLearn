@@ -1,0 +1,11 @@
+package lesson14;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+		//正则表达式的替换功能
+		//public String replaceAll(String regex,String replacement)
+
+
+	}
+}

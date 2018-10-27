@@ -1,0 +1,8 @@
+package lesson11;
+
+public class Tool {
+
+	public static void setFieldValue(Object obj,String fieldName,Object fieldValue){
+		
+	}
+}

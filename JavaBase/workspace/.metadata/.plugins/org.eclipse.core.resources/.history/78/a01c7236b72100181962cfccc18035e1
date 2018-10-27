@@ -1,0 +1,50 @@
+package lesson07;
+
+import java.io.BufferedReader;
+import java.io.IOExcepti
+import java.io.InputStreamReader;on;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.io.PrintWriter;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+public class Demo_Server {
+
+	public static void main(String[] args) throws Exception {
+
+		//1.创建个服务端Socket对象,绑定端口
+		ServerSocket serverSocket = new ServerSocket(9999);
+		
+		//2.监听客户端面连接
+		while(true){
+			Socket clientSocket = serverSocket.accept();
+			
+			//3.接收客户端面发送的数据
+			new Thread(){
+				public void run() {
+					try {
+						//读写数据都是通过IO
+						InputStream is = clientSocket.getInputStream();
+						OutputStream os = clientSocket.getOutputStream();
+						
+						BufferedReader br = new BufferedReader(new InputStreamReader(is));
+						PrintWriter pw = new PrintWriter(os);
+					
+						while(true){
+							//读取客户端的数据
+						
+						//响应客户端面
+						}
+						
+					} catch (Exception e) {
+						// TODO: handle exception
+					}
+					
+				
+				};
+			}.start();
+		}
+		
+	}
+}

@@ -1,0 +1,13 @@
+package lesson02;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+/*		面试题：找bug
+		定义一个文件输入流,调用read(byte[] b)方法,
+		将a.txt文件中的内容打印出来(byte数组大小限制为5)*/
+
+	}
+
+}

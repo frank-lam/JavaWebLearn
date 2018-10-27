@@ -1,0 +1,16 @@
+package lesson07;
+
+import java.io.OutputStreamWriter;
+
+public class Demo02 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	/*	OutputStreamWriter
+		1>使用指定的编码 写入文件
+		*/
+		
+		OutputStreamWriter osw = new OutputStreamWriter(out, "UTF-8")
+	}
+
+}

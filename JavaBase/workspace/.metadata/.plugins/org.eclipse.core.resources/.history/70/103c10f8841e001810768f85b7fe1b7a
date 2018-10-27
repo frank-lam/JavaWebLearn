@@ -1,0 +1,17 @@
+package lesson03;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//线程实现的方式 (1) - 继承Thread 
+	/*	使用步骤
+		定义类继承Thread
+		重写run方法
+		把新线程要做的事写在run方法中
+		创建线程对象
+		开启新线程, 内部会自动执行run方法*/
+	}
+
+}

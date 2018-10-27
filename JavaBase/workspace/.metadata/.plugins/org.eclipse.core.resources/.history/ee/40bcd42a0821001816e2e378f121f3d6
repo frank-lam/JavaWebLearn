@@ -1,0 +1,9 @@
+package lesson08;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+		//通过反射获取成员变量(属性)并使用
+
+	}
+}

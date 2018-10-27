@@ -1,0 +1,14 @@
+package lesson04;
+
+public class Demo01 {
+
+	public static void main(String[] args) {
+/*		单例设计模式 (掌握) 
+		单例设计模式：保证类在内存中只有一个对象。
+			>1.对象是new 出来的
+			>2.程序中，只能new一次对象
+	    单例设计模式		
+		*/
+
+	}
+}
