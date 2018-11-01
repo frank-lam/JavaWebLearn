@@ -10,4 +10,6 @@ JavaWeb Learning
 
 [spring-boot-examples](https://github.com/ityouknow/spring-boot-examples)  
 
-[Java Core Sprout : basic, concurrent, algorithm](https://github.com/crossoverJie/JCSprout)
+[Java Core Sprout : basic, concurrent, algorithm](https://github.com/crossoverJie/JCSprout)  
+
+[Java学习笔记from CSDN](https://blog.csdn.net/jianghao233/article/category/7693400)
