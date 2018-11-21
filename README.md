@@ -13,3 +13,7 @@ JavaWeb Learning
 [Java Core Sprout : basic, concurrent, algorithm](https://github.com/crossoverJie/JCSprout)  
 
 [Java学习笔记from CSDN](https://blog.csdn.net/jianghao233/article/category/7693400)
+
+[程序员江湖CSDN](https://blog.csdn.net/a724888)  
+
+[程序员江湖github](https://github.com/h2pl)
