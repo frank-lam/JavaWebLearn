@@ -614,7 +614,7 @@ Spring使用CGlib 进行AOP代理， hibernate 也是支持CGlib（默认使用 
 
 原理：Spring AOP 底层，会判断用户是根据接口代理还是目标类代理，如果针对接口代理就使用JDK代理，如果针对目标类代理就使用Cglib代理。
 
-<div align="center"> <img src="../pics/../pics/aop1.png" width="650"/></div><br/>
+<div align="center"> <img src="../pics/aop1.png" width="650"/></div><br/>
 
 
 
