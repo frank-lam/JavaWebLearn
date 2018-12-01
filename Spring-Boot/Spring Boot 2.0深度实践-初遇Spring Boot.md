@@ -14,7 +14,8 @@ postman操作：http://localhost:8080/person/save?name=hugo
 * 客户端发送GET请求，获取所有用户（Web Flux）  
 
 #### 构建项目  
-* 图形化方式 [SPRING INITIALIZR](https://start.spring.io/)
+* 图形化方式 [SPRING INITIALIZR](https://start.spring.io/)  
+  idea里面 File-new-Module...-Spring Initializr
 * 命令行方式（Maven）
 
 ```
