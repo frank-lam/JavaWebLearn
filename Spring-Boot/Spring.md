@@ -227,7 +227,7 @@ IoC(Inversion of Control)，意为控制反转，不是什么技术，而是一�
 
 
 
-【必读】IOC深度理解，请转向：[深入浅出IOC](../JavaWeb/深入浅出IOC.md)
+【必读】IOC深度理解，请转向：[深入浅出IOC](../Spring-Boot/深入浅出IOC.md)
 
 
 
